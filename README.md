@@ -16,7 +16,8 @@
 
 ---
 
-Whatever project you're working on, `okk` gives you access (via the command line) to a set of tools and commands that you can use to optimize your development workflows and manage your projects.
+
+Derive any exetended pubkey, in your terminal.
 
 
 ## Install
@@ -39,21 +40,21 @@ result :
 
 ```json
 {
-  derivations: [
-    { i: 0, address: '15j2BNoEd1uwy3pFF1h4YpFYorVXktpHVa' },
-    { i: 1, address: '1MLsETjYsALT3tYRgUxHQ8QE15YVpqTMVR' },
-    { i: 2, address: '1DgsmNVhurgCNk8hTQ1XK9ydF1PW8Unm1T' },
-    { i: 3, address: '1BvCFZ3W2pRLGwUGiN2kxY5oPmgbcoMNnN' },
-    { i: 4, address: '1Furg86iqep5xGn2q2djAFdqgBvdeUWvcC' }
+  "derivations": [
+    { "i": 0, "address": "15j2BNoEd1uwy3pFF1h4YpFYorVXktpHVa" },
+    { "i": 1, "address": "1MLsETjYsALT3tYRgUxHQ8QE15YVpqTMVR" },
+    { "i": 2, "address": "1DgsmNVhurgCNk8hTQ1XK9ydF1PW8Unm1T" },
+    { "i": 3, "address": "1BvCFZ3W2pRLGwUGiN2kxY5oPmgbcoMNnN" },
+    { "i": 4, "address": "1Furg86iqep5xGn2q2djAFdqgBvdeUWvcC" }
   ],
-  pubkey: 'xpub6Bh2z1Mg2fT6KkcHrdEEaQ3C5YRVvfPA7B65pGU4Rci78L7ewGU97M7EVPKZvRhSP86CtEtZsdDpLbJUy4VHpHFEhsvJmEzk8ZwidaZs4Wh',
-  network: 'mainnet',
-  magic: '0488b21e',
-  path: "m/44'/0'",
-  startWith: '1..',
-  type: 'p2pkh',
-  info: 'P2PKH or P2SH',
-  range: [ 0, 4 ]
+  "pubkey": "xpub6Bh2z1Mg2fT6KkcHrdEEaQ3C5YRVvfPA7B65pGU4Rci78L7ewGU97M7EVPKZvRhSP86CtEtZsdDpLbJUy4VHpHFEhsvJmEzk8ZwidaZs4Wh",
+  "network": "mainnet",
+  "magic": "0488b21e",
+  "path": "m/44'/0'",
+  "startWith": "1..",
+  "type": "p2pkh",
+  "info": "P2PKH or P2SH",
+  "range": [ 0, 4 ]
 }
 ```
 
