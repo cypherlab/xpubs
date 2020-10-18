@@ -17,7 +17,7 @@
 ---
 
 
-Derive any exetended pubkey, in your terminal.
+Derive any slip0132 pubkey, in your terminal.
 
 
 ## Install
