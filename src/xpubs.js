@@ -1,7 +1,6 @@
 import { payments as Payments, bip32, networks as Networks } from 'bitcoinjs-lib'
 import _ from 'lodash'
 import b58 from 'bs58check'
-// import * as bip32 from 'bip32'
 
 // we default to bitcoinjs & add features
 const Xpubs = {}
@@ -25,7 +24,6 @@ const slip0132 = {
 
 
 Xpubs.derive = (pubkey='', { start=0, end=4, type='received' } = {}) => {
-  // cast ints
   start = parseInt(start || 0, 10)
   end = parseInt(end || start, 10)
 

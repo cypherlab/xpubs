@@ -1,29 +1,20 @@
 import meow from 'meow'
 import _ from 'lodash'
 import Xpubs from './xpubs'
-// import { shell, thro, read, exists, exec, filesPaths, resolvePath, getPwd } from './utils'
 
 
 ;(async () => {
 
   const cli = meow(`
     Usage
-      $ xpubs <xpub> --flags
-
-    Options
-      --ack,          dry run by default, specify this option to run real
-      --clean,        delete kit files
+      $ xpubs <xpub> [range]
 
     Examples
-      $ okk script heroku:log
-  `, {
-    flags: {
-        ack: { type: 'boolean' }
-    }
-  })
+      $ xpubs xpub6B....aZs4Wh
+      $ xpubs xpub6B....aZs4Wh 0,50
+  `)
 
 
-  // ARGS
   const { input, flags } = cli
   let [ xpub, range ] = input
 
@@ -31,7 +22,7 @@ import Xpubs from './xpubs'
   try {
     let [ start, end ] = (range || '').split(',')
     const result = Xpubs.derive(xpub, { start, end })
-    // console.log('apppp', input, flags)
+
     console.log(result)
 
   }catch(e){
