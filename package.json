@@ -1,6 +1,6 @@
 {
   "name": "xpubs",
-  "description": "🔑 Derive Xpub Keys",
+  "description": "🔑 Xpub Keys Derivation",
   "version": "0.0.1",
   "author": "Louis Grellet <as1cron@gmail.com>",
   "repository": "https://github.com/cypherlab/xpubs",
